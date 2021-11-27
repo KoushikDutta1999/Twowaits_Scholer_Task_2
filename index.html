@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<!-- Google Font Link -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- CSS Link -->
-		<link rel="stylesheet" href="./style.css" />
-		<title>Landing Page</title>
-	</head>
-	<body>
-		<header>
-			<div class="logo-container">
-				<img src="./img/logo.svg" alt="logo" />
-				<h4 class="logo">Three Dots</h4>
-			</div>
-			<nav>
-				<ul class="nav-links">
-					<li><a class="nav-link" href="#">Specs</a></li>
-					<li><a class="nav-link" href="#">Products</a></li>
-					<li><a class="nav-link" href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="cart">
-				<img src="./img/cart.svg" alt="cart" />
-			</div>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 
-		<main>
-			<section class="presentation">
-				<div class="introduction">
-					<div class="intro-text">
-						<h1>Laptop for the future</h1>
-						<p>
-							The new 14 inch bezeless display offerring a 4k
-							display with touch screen.
-						</p>
-					</div>
-					<div class="cta">
-						<button class="cta-select">14 Inch</button>
-						<button class="cta-add">Add To Cart</button>
-					</div>
-				</div>
-				<div class="cover">
-					<img src="./img/matebook.png" alt="matebook" />
-				</div>
-			</section>
+    <title>Fitness Factory</title>
+</head>
+<style>
+    body{
+        background-image: url('img/bg.jpg');
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="logo">
+            <div class="fitnesss">Fitness</div>
+        </div>
 
-			<div class="laptop-select">
-				<img src="./img/arrow-left.svg" alt="" />
-				<img src="./img/dot.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/arrow-right.svg" alt="" />
-			</div>
+        <!-- mid box for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#fitness">Fitness</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
-			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
-			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
-			<img class="small-circle" src="./img/small-eclipse.svg" alt="" />
-		</main>
-	</body>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="about" id="about">
+        <h1>
+            About
+        </h1>
+        <p>
+            A gymnasium, also known as a gym, is a covered location for athletics. ... "Gym" is also slang for "fitness centre", which is often an area for indoor recreation. A gym may be open air as well. A gym is a place with a number of equipments and machines used by the people to do exercises.
+        </p>
+    </div>
+    <div class="fitness" id="fitness">
+        <h1>
+            Fitness
+        </h1>
+        <p>
+            Regular exercise helps control weight when use with a balanced diet. Regular physical activity can help you prevent or manage a wide range of health problems and concerns, including stroke, metabolic syndrome, type 2 diabetes, depression, and certain types of cancer, arthritis and falls. Regular training helps reduce stress and improves moods. Regular weight training can improve muscle mass.
+        </p>
+    </div>
+    <div class="container" id="contact">
+        <h1>
+            Join The Best Gym in Kolkata This Winter
+        </h1>
+        <form action="">
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your Number">
+            </div>
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your mail id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
 </html>
